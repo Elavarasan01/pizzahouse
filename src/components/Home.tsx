@@ -49,7 +49,7 @@ const Home = () => {
             We are getting {data.profit} profit / day
           </p>
           <h2 className="text-success">
-            We Have outlet in <span className="text-danger">{data.outlet}</span>{" "}
+            We Have outlet in <span className="text-danger">{data.outlet}</span>
             also
           </h2>
         </div>
@@ -58,7 +58,7 @@ const Home = () => {
             src="./assets/pizza1.jpg"
             alt="pizza sub2"
             className="form-control"
-            style={{ height: "400px", width: "500px" }}
+            style={{ height: "400px", width: "500px" ,float:"right"}}
           />
         </div>
       </div>

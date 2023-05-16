@@ -19,9 +19,8 @@ function About() {
 
   return (
     <div>
-      <img src="./assets/chennai.jpg" alt="chennai" />
-      <img src="./assets/bangalore.jpg" alt="bangalore" />
-      <img src="./assets/Hyderabad.jfif" alt="Hyderabad" />
+      <img src="./assets/chennai1.jpg" alt="chennai" style={{height:"500px",width:"900px",marginRight:"2rem"}}/>
+      <img src="./assets/bangalore1.jpg" alt="bangalore" style={{height:"500px",width:"900px"}} />
 
       <h2 className="text-success mt-5">We have Branches in </h2>
       <p>{data.Branches}</p>

@@ -1,6 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 interface Authprod {
   id: number;
@@ -57,7 +56,7 @@ function Contact() {
      })
   }
 
-  const deleteData=(id:any)=>{
+  const deleteData=(id:number)=>{
     axios.delete("http://localhost:2000/contact/"+id)
     .then(()=>{
       console.log("deleted" + id + "this")
@@ -75,10 +74,10 @@ function Contact() {
         <table className="table table-striped table-bordered">
           <thead>
             <tr>
-              <td>Id</td>
-              <td>Name</td>
-              <td>Price</td>
-              <td>Action</td>
+              <td><b>Id</b></td>
+              <td><b>Name</b></td>
+              <td><b>Price</b></td>
+              <td><b>Action</b></td>
             </tr>
           </thead>
           <tbody>
@@ -98,11 +97,11 @@ function Contact() {
         </table>
       </div>
       <div className="col-8 offset-4">
-        <h1 className="text-success">Add your favorite pizza here</h1>
+        <h1 className="text-success"><u>Add your favorite pizza here</u></h1>
         <label className="m-2">Pizza Name</label>
         <input placeholder="Enter pizza Name" className="form-control-sm" value={pizzaName} onChange={(e)=>setPizzaName(e.target.value)}/>
-        <label className="m-2">min-Price</label>
-        <input className="form-control-sm" value={pizzaPrice} onChange={(e)=>setPizzaPrice(e.target.value)}/>
+        <label className="m-2">Pizza-Price</label>
+        <input className="form-control-sm" placeholder="Min price" value={pizzaPrice} onChange={(e)=>setPizzaPrice(e.target.value)}/>
         <div className="text-center">
           {isedit?
          <button className="btn btn-success" onClick={savepizza}>Save</button> :  
