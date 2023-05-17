@@ -21,14 +21,14 @@ const Home = () => {
   return (
     <div>
       <img
-        style={{ width: "100vw", height: "50vh" }}
+        style={{ width: "99vw", height: "50vh" }}
         src="./assets/pizza-banner.jpg"
         alt="Pizza Images"
       />
       <h1 className="text-center text-danger blinkme">
         {data.storeName + " Order Here"}
       </h1>
-      <div className="row">
+      <div className="row rowAdjust">
         <div className="col-6">
           <img
             src="./assets/pizza.jfif"
@@ -43,7 +43,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="row">
+      <div className="row rowAdjust">
         <div className="col-6 pt-5">
           <p className="text-left mt-5 text-info fw-bold">
             We are getting {data.profit} profit / day
@@ -58,7 +58,7 @@ const Home = () => {
             src="./assets/pizza1.jpg"
             alt="pizza sub2"
             className="form-control"
-            style={{ height: "400px", width: "500px" ,float:"right"}}
+            style={{ height: "400px", width: "500px", float: "right" }}
           />
         </div>
       </div>

@@ -16,6 +16,16 @@ code {
  
     animation: blinker 1s linear infinite;
 }
+
+
+.rowAdjust{
+  --bs-gutter-x: 0rem !important;
+}
+
+.tableDiv{
+  max-height: 63vh;
+  overflow: auto;
+}
   
   @keyframes blinker {  
     50% { opacity: 0; }
